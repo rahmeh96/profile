@@ -1,0 +1,97 @@
+body{
+    margin: auto;
+    background-color: #F4F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    line-height: 1.6;
+    font-size: 18px;
+}
+nav{
+    background-color: #008080;
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px ;
+    position: fixed; /* Fixes the navbar to the viewport */
+      top: 0; /* Positions it at the top of the page */
+      left: 0;
+      width: 100%; /* Full width of the viewport */
+      z-index: 1000; /* Keeps the navbar on top */
+    justify-content: center;
+    padding: 20px;
+    
+}
+h1{
+    color: #1E2A47 ;
+    margin-top: 80px;
+    position: relative;
+    margin-left: 60px;
+}
+
+ h3, ol{
+    color: #1E2A47 ;
+    margin-left: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-nav:hover {
+border: 2px solid rgb(10, 140, 184);
+padding: 10px;
+border-radius: 10px;
+}
+.container {
+    display: flex; /* Enables Flexbox */
+    gap: 50px; /* Adds 20px space between items */
+    align-items: center; /* Optional: Aligns items vertically/ same axis as the flex direction */
+    background-color: #1E2A47;
+    padding: 20px;
+
+}
+.intro-img{
+border: 1px solid rgb(25, 25, 25);
+border-radius: 50%;
+height: 250px;
+width: 250px;
+max-width: 100%;
+min-width: auto;
+background-color: lightblue;
+}
+  p {
+        flex: 0 1 600px; /* Shrinks paragraph to a max width of 600px */
+        
+  }
+
+  .social-icons{
+    display: flex;
+    gap: 30px;
+    margin-left: 300px;
+   
+  }
+  /* For tablets */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 500px) {
+    .main-container {
+        font-size: 14px;
+    }
+    .container{
+        display: inline;
+        color: #1E2A47;
+        background-color: #F4F4F4;
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 10px;
+        margin-left: 30px;
+   
+}
+}
